@@ -42,6 +42,6 @@ Congreso CEIAAIT 2024, UNAM.
 ---
 
 ## 📫 Conecta conmigo
-- 💼 [LinkedIn]([https://www.linkedin.com/](https://www.linkedin.com/in/maría-de-lourdes-malagón-casales-27772538a))  
+- 💼 [LinkedIn](https://www.linkedin.com/in/maría-de-lourdes-malagón-casales-27772538a)  
 - 🧑‍💻 [GitHub](https://github.com/lulumalagon)  
 - ✉️ lulu.malagon21
