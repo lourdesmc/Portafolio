@@ -1,0 +1,183 @@
+﻿@model YOLOTOL.Models.Usuarios;
+
+@{
+    ViewData["Title"] = "Registrarse";
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<head>
+    <title>Registro</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--===============================================================================================-->
+    <link rel="icon" type="image/png" href="~/css/Registro/images/icons/favicon.ico" />
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/css/Registro/vendor/bootstrap/css/bootstrap.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/css/Registro/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/css/Registro/fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/css/Registro/fonts/iconic/css/material-design-iconic-font.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/css/Registro/vendor/animate/animate.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/css/Registro/vendor/css-hamburgers/hamburgers.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/css/Registro/vendor/animsition/css/animsition.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/css/Registro/vendor/select2/select2.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/css/Registro/vendor/daterangepicker/daterangepicker.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/css/Registro/css/util.css">
+    <link rel="stylesheet" type="text/css" href="~/css/Registro/css/main.css">
+    <!--===============================================================================================-->
+</head>
+<body style="background-color: #000;">
+    <div class="limiter">
+        <div class="container-login100">
+            <div class="wrap-login100 p-l-50 p-r-50 p-t-72 p-b-50">
+                <form asp-controller="Usuarios" asp-action="Add" class="needs-validation login100-form" method="post" enctype="multipart/form-data">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                    <span class="login100-form-title p-b-59">
+                        Regístrate
+                    </span>
+
+                    <div class="wrap-input100 validate-input">
+                        <span class="label-input100">Nombre</span>
+                        <input asp-for="nombre" class="input100" type="text" placeholder="Juan" required>
+                        <span class="focus-input100" asp-validation-for="nombre"></span>
+                    </div>
+
+                    <div class="wrap-input100 validate-input">
+                        <span class="label-input100">Apellido paterno</span>
+                        <input type="text" asp-for="apellidoP" class="input100" placeholder="Peréz" required>
+                        <span class="focus-input100"></span>
+                    </div>
+
+                    <div class="wrap-input100 validate-input">
+                        <span class="label-input100">Apellido materno</span>
+                        <input type="text" asp-for="apellidoM" class="input100" placeholder="Sanchez" required>
+                        <span class="focus-input100"></span>
+                    </div>
+
+                    <div class="wrap-input100 validate-input">
+                        <span class="label-input100">Correo</span>
+                        <input type="email" asp-for="correo" class="input100" placeholder="ejemplo@gmail.com" required>
+                        <span class="focus-input100"></span>
+                    </div>
+
+                    <div class="wrap-input100 validate-input">
+                        <span class="label-input100">Contraseña</span>
+                        <input type="password" asp-for="contrasenia" class="input100" placeholder="*******" required>
+                        <span class="focus-input100" asp-validation-for="contrasenia"></span>
+                    </div>
+
+                    <div class="wrap-input100 validate-input">
+                        <span class="label-input100">Fecha de nacimiento</span>
+                        <input type="date" asp-for="fechaNacimiento" class="input100" placeholder="México" required>
+                        <span class="focus-input100" asp-validation-for="fechaNacimiento"></span>
+                    </div>
+
+                    <div class="wrap-input100 validate-input form-group">
+                        <span class="label-input100">Foto de perfil</span>
+                        <input type="file" asp-for="archivo" accept="image/*" class="input100" placeholder="png o jpg" required>
+                        <span class="focus-input100" asp-validation-for="archivo"></span>
+                    </div>
+
+                    <div class="wrap-input100 validate-input">
+                        <span class="label-input100">Cédula</span>
+                        <input type="text" asp-for="cedula" class="input100" placeholder="Cedula" required>
+                        <span class="focus-input100"></span>
+                    </div>
+
+                    <div class="wrap-input100 validate-input">
+                        <span class="label-input100">Teléfono</span>
+                        <input type="text" asp-for="telefono" class="input100" required>
+                        <span class="focus-input100"></span>
+                    </div>
+
+                    <div class=" validate-input">
+                        <span class="label-input100">Tipo de usuario</span>
+                        <span asp-validation-for="tipoUsuario" class="text-danger"></span>
+                        
+                        <select class="custom-select" asp-for="tipoUsuario">
+
+                            <option>Administrador</option>
+                            <option selected>Padre familia</option>
+                            <option>Profesional</option>
+                        </select>
+                    </div>
+
+                        <div class="container-login100-form-btn mt-5">
+                            <div class="wrap-login100-form-btn">
+                                <div class="login100-form-bgbtn"></div>
+                                <button type="submit" class="login100-form-btn">
+                                    Registrarse
+                                </button>
+                            </div>
+
+                            <a asp-action="Login" asp-controller="Home" class="dis-block txt3 hov1 p-r-30 p-t-10 p-b-10 p-l-30">
+                                Iniciar sesión
+                                <i class="fa fa-long-arrow-right m-l-5"></i>
+                            </a>
+                        </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="~/css/Registro/vendor/jquery/jquery-3.2.1.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="~/css/Registro/vendor/animsition/js/animsition.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="~/css/Registro/vendor/bootstrap/js/popper.js"></script>
+    <script src="~/css/Registro/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="~/css/Registro/vendor/select2/select2.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="~/css/Registro/vendor/daterangepicker/moment.min.js"></script>
+    <script src="~/css/Registro/vendor/daterangepicker/daterangepicker.js"></script>
+    <!--===============================================================================================-->
+    <script src="~/css/Registro/vendor/countdowntime/countdowntime.js"></script>
+    <!--===============================================================================================-->
+
+</body>
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
+
+<!---Scrpt para validaciones-->
+<script>
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+    (function () {
+        'use strict';
+        window.addEventListener('load', function () {
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            var forms = document.getElementsByClassName('needs-validation');
+            // Loop over them and prevent submission
+            var validation = Array.prototype.filter.call(forms, function (form) {
+                form.addEventListener('submit', function (event) {
+                    if (form.checkValidity() === false) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                    }
+                    form.classList.add('was-validated');
+                }, false);
+            });
+        }, false);
+    })();
+    //Script para cerrar las alertas
+    window.setTimeout(function () {
+        $(".alert").fadeTo(500, 0).slideUp(500, function () {
+            $(this).remove();
+        });
+    }, 2000);
+</script>

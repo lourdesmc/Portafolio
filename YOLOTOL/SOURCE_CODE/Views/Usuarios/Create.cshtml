@@ -1,0 +1,104 @@
+@model YOLOTOL.Models.Usuarios
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "_LayoutDash";
+
+}
+<div>
+    <h4 class="text-center" style="color: #00BFEB; font-weight: 600">Crear un nuevo usuario</h4>
+    <hr />
+</div>
+
+
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb col-12">
+        <li class="breadcrumb-item">
+
+            <a asp-controller="Panel" asp-action="Index">Inicio</a>
+        </li>
+        <li class="breadcrumb-item"><a asp-controller="Usuarios" asp-action="Index">Usuarios</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Crear</li>
+    </ol>
+</nav>
+
+<div class="row">
+    <div class="">
+        <form asp-action="Create" enctype="multipart/form-data">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="row">
+                <div class="form-group col-6">
+                    <label asp-for="nombre" class="control-label"></label>
+                    <input asp-for="nombre" class="form-control" />
+                    <span asp-validation-for="nombre" class="text-danger"></span>
+                </div>
+                <div class="form-group col-6">
+                    <label asp-for="apellidoP" class="control-label"></label>
+                    <input asp-for="apellidoP" class="form-control" />
+                    <span asp-validation-for="apellidoP" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group col-6">
+                    <label asp-for="apellidoM" class="control-label"></label>
+                    <input asp-for="apellidoM" class="form-control" />
+                    <span asp-validation-for="apellidoM" class="text-danger"></span>
+                </div>
+                <div class="form-group col-6">
+                    <label asp-for="correo" class="control-label"></label>
+                    <input asp-for="correo" class="form-control" />
+                    <span asp-validation-for="correo" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group col-6">
+                    <label asp-for="contrasenia" class="control-label"></label>
+                    <input asp-for="contrasenia" class="form-control" />
+                    <span asp-validation-for="contrasenia" class="text-danger"></span>
+                </div>
+                <div class="form-group col-6">
+                    <label asp-for="fechaNacimiento" class="control-label"></label>
+                    <input type="date" asp-for="fechaNacimiento" class="form-control" />
+                    <span asp-validation-for="fechaNacimiento" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group col-6">
+                    <label asp-for="archivo" class="control-label form-label">Seleccionar imagen</label>
+                    <br />
+                    <input type="file" class="form-control input-group-lg" required asp-for="archivo" accept="image/*" />
+                    <span asp-validation-for="archivo" class="text-danger"></span>
+                </div>
+                <div class="form-group col-6">
+                    <label asp-for="cedula" class="control-label"></label>
+                    <input asp-for="cedula" class="form-control" />
+                    <span asp-validation-for="cedula" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group col-6">
+                    <label asp-for="telefono" class="control-label"></label>
+                    <input asp-for="telefono" class="form-control" />
+                    <span asp-validation-for="telefono" class="text-danger"></span>
+                </div>
+               
+            </div>
+            <div class="row text-center">
+               
+                <div class="form-group col-12 align-middle ">
+                    <a asp-action="Index" class="btn"><i class="fa fa-arrow-alt-circle-left"></i></a>
+
+                    <input type="submit" value="Crear" class="btn text-white" style="background-color: #00BFEB" />
+                </div>
+            </div>
+            
+            
+        </form>
+    </div>
+</div>
+
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

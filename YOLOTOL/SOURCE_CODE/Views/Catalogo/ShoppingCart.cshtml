@@ -1,0 +1,122 @@
+﻿@{
+    ViewData["Title"] = "Carrito";
+}
+
+<br />
+<h1 class="text-info">Carrito de compras</h1>
+
+<div class="container">
+    <div class="row">
+        @if (ViewBag.cart != null)
+        {
+            <div class="col-md-9 ">
+                <table id="Cart" class="table">
+                    <thead>
+                        <tr class="">
+                            <th style="width:50%">Producto</th>
+                            <th style="width:10%">Precio</th>
+                            <th style="width:8%">Cantidad</th>
+                            <th style="width:22%">Subtotal</th>
+                            <th style="width:10%">Opciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in ViewBag.cart)
+                        {
+                            <tr>
+                                <td data-th="Producto">
+                                    <div class="row">
+                                        <div class="col-sm-4 hidden-xs">
+                                            <img src="~/Producto/@item.Producto.Imagen" width="100" class="img-responsive">
+                                        </div>
+                                        <div class="col-sm-8">
+                                            <h4 class="nomargin text-white">@item.Producto.Nombre</h4>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td data-th="Precio" class="">$@item.Producto.Precio MXN</td>
+                                <td data-th="Cantidad" class="">
+                                    <input type="number" id="quantity" name="quantity" class="form-control text-center cantidad" value="@item.Quantity" />
+                                </td>
+                                <td data-th="Subtotal" class="">$@(item.Quantity * item.Producto.Precio) MXN</td>
+                                <td data-th="Opciones">
+                                    <button asp-action="Update" class="btn btn-info btn-sm update-cart" data-id="@item.Producto.IdProducto"><i class="fas fa-sync-alt"></i></button>
+                                    <a asp-action="Remove" asp-route-id="@item.Producto.IdProducto" class="btn btn-danger btn-sm"><i class="fas fa-trash" aria-hidden="true"></i></a>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                    <tfoot>
+                        <tr class="visible-xs">
+                            <td class="text-center"><strong style="color:#336633">Total: $@ViewBag.total MXN</strong></td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+            <div class="col-md-3 justify-content-center">
+                <div class="contenedor mb-4 box-shadow" style="position: sticky!important; top:0">
+                    <div class="card-body">
+                        @if (ViewBag.count > 1)
+                        {
+                            <h5>Cantidad: @ViewBag.count productos</h5>
+                            <h5>Total: $@ViewBag.total MXN</h5>
+                            <div class="text-center">
+                                <a class="btn" style="width:200px; background: #336633;" asp-controller="Payment" asp-action="CreatePayment"><i class="fab fa-paypal"></i>Pagar con Paypal</a>
+                                <a class="btn" style="width:200px; background: #b23434;"><i class="fas fa-angle-left"></i>Continuar comprando</a>
+                            </div>
+                        }
+                        else if (ViewBag.count == 1)
+                        {
+                            <h5>Cantidad: @ViewBag.count producto</h5>
+                            <h5>Total: $@ViewBag.total MXN</h5>
+                            <div class="text-center">
+                                <a class="btn " style="width:200px; background: #336633;" asp-controller="Payment" asp-action="CreatePayment"><i class="fab fa-paypal"></i>Pagar con Paypal</a>
+                                <a class="btn " style="width:200px; background: #b23434;"><i class="fas fa-angle-left"></i>Continuar comprando</a>
+                            </div>
+                        }
+                        else if (ViewBag.cantidad == 0)
+                        {
+                            <h5>La cantidad de sus productos está en 0. ¡Compre algo!</h5>
+                        }
+                        <br />
+                    </div>
+                </div>
+            </div>
+        }
+        else
+        {
+            <h3 style="color: black">No ha agregado productos a su carrito, ¿Qué espera?</h3>
+        }
+    </div>
+</div>
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script type="text/javascript">
+    $(function () {
+        function getAbsolutePath() {
+            var loc = window.location;
+            var pathName = loc.pathname.substring(0, loc.pathname.lastIndexOf('/') + 1);
+            return loc.href.substring(0, loc.href.length - ((loc.pathname + loc.search + loc.hash).length - pathName.length));
+        }
+        var urlUpdate = getAbsolutePath() + 'Update';
+        $(".update-cart").click(function (e) {
+            e.preventDefault();
+            var c = $(this);
+            $.ajax({
+                type: 'POST',
+                url: urlUpdate,
+                data: {
+                    id: c.attr("data-id"),
+                    quantity: c.parents("tr").find(".cantidad").val()
+                },
+                success: function (response) {
+                    window.location.reload();
+                    console.log("Success.");
+                },
+                error: function (response) {
+                    console.log("Error al actualizar cantidad.");
+                }
+            });
+        });
+    });
+</script>

@@ -1,0 +1,38 @@
+@model IEnumerable<YOLOTOL.Models.Categorias>
+
+@{
+    Layout = "_LayoutDash";
+    ViewData["Title"] = "Index";
+}
+
+<h1 class="text-center">Categoría</h1>
+
+<p>
+    <a asp-action="Create">Agregar categoria</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Nombre)
+            </th>
+            
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nombre)
+            </td>
+           
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.IdCategoria"><i class="fa fa-pen"></i></a> |
+                <a asp-action="Details" asp-route-id="@item.IdCategoria"><i class="fa fa-bar-chart"></i></a> |
+                <a asp-action="Delete" asp-route-id="@item.IdCategoria"><i class="fa fa-trash"></i></a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

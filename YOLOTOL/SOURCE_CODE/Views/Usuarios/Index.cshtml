@@ -1,0 +1,93 @@
+@model IEnumerable<YOLOTOL.Models.Usuarios>
+
+@{
+    Layout = "_LayoutDash";
+    ViewData["Title"] = "Index";
+}
+
+<h1 >Usuarios</h1>
+
+<p style="text-decoration:none; font-size:24px; font-family:'Oregon LDO';"> 
+    <a asp-action="Create">Crear nuevo</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.nombre)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.apellidoP)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.apellidoM)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.correo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.contrasenia)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.fechaNacimiento)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.fotoPerfil)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.cedula)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.telefono)
+            </th>
+           
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.nombre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.apellidoP)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.apellidoM)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.correo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.contrasenia)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.fechaNacimiento)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.fotoPerfil)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.cedula)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.telefono)
+            </td>
+
+
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.IdUsuario"><i style="color:black;" class="fa fa-pen"></i></a> 
+            </td>
+            <td>
+                <a asp-action="Details" asp-route-id="@item.IdUsuario"><i style="color:black;" class="fa fa-list"></i></a> 
+
+            </td>
+            <td>
+                <a asp-action="Delete" asp-route-id="@item.IdUsuario"><i style="color:black;" class="fa fa-window-close" ></i></a>
+            </td>
+
+        </tr>
+}
+    </tbody>
+</table>

@@ -1,0 +1,661 @@
+﻿@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+.home {
+    background: url(../../img/Home/Des_fondo.png) no-repeat top center;
+    background-size: cover;
+    position: relative;
+}
+
+.main_home {
+    overflow: hidden;
+    padding-top: 200px;
+    padding-bottom: 230px;
+}
+/*-------------------------------------
+		4. We-do
+--------------------------------------*/
+.titl {
+    color: #00608c;
+}
+
+.we-do {
+    padding: 115px 0 82px;
+}
+
+/* section-header */
+.section-header h2 {
+    color: #44454f;
+    font-size: 30px;
+    font-family: Oregon LDO;
+    font-weight: 700;
+}
+
+    .section-header h2 span {
+        color: #4d4e54;
+    }
+
+.section-header p {
+    color: #888;
+    font-size: 16px;
+    font-family: Oregon LDO;
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-top: 32px;
+    line-height: 1.8;
+}
+/* section-header */
+
+
+/*single-we-do-box */
+
+
+.we-do-description {
+    padding: 55px 0 70px;
+}
+
+.single-we-do-box {
+    box-shadow: 0 0 5px rgba(35,37,41,.1);
+    overflow-x: hidden;
+    margin-top: 15px;
+    opacity: 1;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
+}
+
+/*we-do-description*/
+.single-we-do-box {
+    background: #fff;
+    min-height: 345px
+}
+/* we-do-info */
+.we-do-info {
+    font-family: Oregon LDO;
+    text-transform: capitalize;
+}
+
+.we-do-img {
+    margin-right: 5px;
+    border-radius: 50%;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
+}
+
+.we-do-topics {
+    margin-top: 32px;
+    margin-bottom: 27px;
+}
+
+    .we-do-topics h2 a {
+        color: #44454f;
+        font-size: 20px;
+        text-decoration: none;
+    }
+/* we-do-info */
+
+
+/* we-do-comment */
+.we-do-comment {
+    margin-top: 14px;
+}
+
+    .we-do-comment p {
+        color: #888;
+        font-size: 16px;
+        font-family: Oregon LDO;
+        max-width: 306px;
+        margin: 0 auto;
+    }
+/* we-do-comment */
+
+
+/*we-do-description*/
+.single-we-do-box:hover {
+    box-shadow: 0 5px 20px rgba(112,134,230,.2);
+    opacity: 1;
+}
+
+/*owl carousel*/
+.owl-carousel .owl-stage {
+    position: relative;
+    padding-top: 26px;
+    padding-bottom: 40px;
+}
+
+
+
+/**----------------------------------------------*/
+
+
+/**********Menu******/
+.hr {
+    color: #000000;
+    margin: 0;
+    width: 100%;
+    max-width: 100%;
+}
+
+nav {
+    height: 80px;
+    width: 100%;
+}
+
+.enlace {
+    position: absolute;
+    padding: 20px 50px;
+}
+
+.logo {
+    height: 2.5em;
+    margin-left: 20%;
+    max-width: 100%;
+}
+
+nav ul {
+    float: right;
+    margin-right: 30px;
+}
+
+    nav ul li {
+        display: inline-block;
+        line-height: 80px;
+        margin: 0 2px;
+    }
+
+        nav ul li a {
+            color: #000000;
+            font-size: 1.2vw;
+            padding: 7px 20px;
+            border-radius: 10px;
+            text-transform: uppercase;
+            font-family: Oregon LDO;
+            text-decoration: none !important;
+        }
+
+
+
+
+.checkbtn {
+    font-size: 30px;
+    color: #000000;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+
+
+@media (max-width: 952px) {
+    .enlace {
+        padding-left: 20px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 858px) {
+    .checkbtn {
+        display: block;
+    }
+
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #f8f9fa;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        z-index: 1030;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+        nav ul li a {
+            font-size: 20px;
+        }
+
+    li a:hover, li a.active {
+        background: none;
+        color: red;
+    }
+
+    #check:checked ~ ul {
+        left: 0;
+    }
+}
+
+
+/************Bottum*********************/
+.button-24 {
+    background: #FFc20c;
+    height: 50%;
+    border: 1px solid #FFc20c;
+    border-radius: 10%;
+    color: #FFFFFF;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 800;
+    outline: 0;
+    padding: 1vw 2vw;
+    text-align: center;
+    text-rendering: geometricprecision;
+    text-transform: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+    margin-left: .5vw;
+    margin-right: .5vw;
+    box-shadow: 5px 7px 18px 2px rgba(153,153,153,0.62);
+    -webkit-box-shadow: 5px 7px 18px 2px rgba(153,153,153,0.62);
+    -moz-box-shadow: 5px 7px 18px 2px rgba(153,153,153,0.62);
+}
+
+    .button-24:hover,
+    .button-24:active {
+        background-color: initial;
+        background-position: 0 0;
+        color: #Ffc20c;
+    }
+
+    .button-24:active {
+        opacity: .5;
+    }
+
+
+
+.button-25 {
+    background: #37bd36;
+    border: 1px solid #37bd36;
+    border-radius: 10%;
+    color: #FFFFFF;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 800;
+    outline: 0;
+    padding: 1vw 2vw;
+    text-align: center;
+    text-rendering: geometricprecision;
+    text-transform: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+    margin-left: .5vw;
+    margin-right: .5vw;
+    box-shadow: 5px 7px 18px 2px rgba(153,153,153,0.62);
+    -webkit-box-shadow: 5px 7px 18px 2px rgba(153,153,153,0.62);
+    -moz-box-shadow: 5px 7px 18px 2px rgba(153,153,153,0.62);
+}
+
+    .button-25:hover,
+    .button-25:active {
+        background-color: initial;
+        background-position: 0 0;
+        color: #37bd36;
+    }
+
+    .button-25:active {
+        opacity: .5;
+    }
+
+
+.button-26 {
+    background: #00bfeb;
+    border: 1px solid #00bfeb;
+    border-radius: 10%;
+    color: #FFFFFF;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 800;
+    outline: 0;
+    padding: 1vw 2vw;
+    text-align: center;
+    text-rendering: geometricprecision;
+    text-transform: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+    margin-left: .5vw;
+    margin-right: .5vw;
+    box-shadow: 5px 7px 18px 2px rgba(153,153,153,0.62);
+    -webkit-box-shadow: 5px 7px 18px 2px rgba(153,153,153,0.62);
+    -moz-box-shadow: 5px 7px 18px 2px rgba(153,153,153,0.62);
+}
+
+    .button-26:hover,
+    .button-26:active {
+        background-color: initial;
+        background-position: 0 0;
+        color: #00bfeb;
+    }
+
+    .button-26:active {
+        opacity: .5;
+    }
+
+
+
+.button-27 {
+    background: #ff78ad;
+    border: 1px solid #ff78ad;
+    border-radius: 10%;
+    color: #FFFFFF;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 800;
+    outline: 0;
+    padding: 1vw 2vw;
+    text-align: center;
+    text-rendering: geometricprecision;
+    text-transform: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+    margin-left: .5vw;
+    margin-right: .5vw;
+    box-shadow: 5px 7px 18px 2px rgba(153,153,153,0.62);
+    -webkit-box-shadow: 5px 7px 18px 2px rgba(153,153,153,0.62);
+    -moz-box-shadow: 5px 7px 18px 2px rgba(153,153,153,0.62);
+}
+
+    .button-27:hover,
+    .button-27:active {
+        background-color: initial;
+        background-position: 0 0;
+        color: #f70062;
+    }
+
+    .button-27:active {
+        opacity: .5;
+    }
+
+
+.button-28 {
+    background: #9a11f4;
+    border: 1px solid #9a11f4;
+    border-radius: 10%;
+    color: #FFFFFF;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 800;
+    outline: 0;
+    padding: 1vw 2vw;
+    text-align: center;
+    text-rendering: geometricprecision;
+    text-transform: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+    margin-left: .5vw;
+    margin-right: .5vw;
+    box-shadow: 5px 7px 18px 2px rgba(153,153,153,0.62);
+    -webkit-box-shadow: 5px 7px 18px 2px rgba(153,153,153,0.62);
+    -moz-box-shadow: 5px 7px 18px 2px rgba(153,153,153,0.62);
+}
+
+    .button-28:hover,
+    .button-28:active {
+        background-color: initial;
+        background-position: 0 0;
+        color: #9a11f4;
+    }
+
+    .button-28:active {
+        opacity: .5;
+    }
+
+.button-29 {
+    background: #ff3b3e;
+    border: 1px solid #ff3b3e;
+    border-radius: 10%;
+    color: #FFFFFF;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 800;
+    outline: 0;
+    padding: 1vw 2vw;
+    text-align: center;
+    text-rendering: geometricprecision;
+    text-transform: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+    margin-left: .5vw;
+    margin-right: .5vw;
+    box-shadow: 5px 7px 18px 2px rgba(153,153,153,0.62);
+    -webkit-box-shadow: 5px 7px 18px 2px rgba(153,153,153,0.62);
+    -moz-box-shadow: 5px 7px 18px 2px rgba(153,153,153,0.62);
+}
+
+    .button-29:hover,
+    .button-29:active {
+        background-color: initial;
+        background-position: 0 0;
+        color: #ff3b3e;
+    }
+
+    .button-29:active {
+        opacity: .5;
+    }
+
+
+
+
+
+
+
+
+/*********************************/
+/*==================== 
+  Footer 
+====================== */
+
+
+footer {
+    position: fixed;
+    bottom: 0;
+}
+
+@media (max-height:800px) {
+    footer {
+        position: static;
+    }
+
+    header {
+        padding-top: 40px;
+    }
+}
+
+
+.footer-distributed {
+    background-color: #212529;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: bold 16px;
+    font-family: Oregon LDO;
+    padding: 50px 50px 60px 50px;
+    margin-top: 80px;
+}
+
+    .footer-distributed .footer-left,
+    .footer-distributed .footer-center,
+    .footer-distributed .footer-right {
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    /* Footer left */
+
+    .footer-distributed .footer-left {
+        width: 30%;
+    }
+
+    .footer-distributed h3 {
+        color: #ffffff;
+        font: normal 36px;
+        margin: 0;
+        font-family: Oregon LDO;
+    }
+
+    /* The company logo */
+
+    .footer-distributed .footer-left img {
+        width: 30%;
+    }
+
+    .footer-distributed h3 span {
+        color: #e0ac1c;
+    }
+
+    /* Footer links */
+
+    .footer-distributed .footer-links {
+        color: #ffffff;
+        margin: 20px 0 12px;
+    }
+
+        .footer-distributed .footer-links a {
+            display: inline-block;
+            line-height: 1.8;
+            text-decoration: none;
+            color: inherit;
+        }
+
+    .footer-distributed .footer-company-name {
+        color: #8f9296;
+        font-size: 14px;
+        font-weight: normal;
+        margin: 0;
+    }
+
+    /* Footer Center */
+
+    .footer-distributed .footer-center {
+        width: 35%;
+    }
+
+
+        .footer-distributed .footer-center i {
+            background-color: #33383b;
+            color: #ffffff;
+            font-size: 25px;
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 42px;
+            margin: 10px 15px;
+            vertical-align: middle;
+        }
+
+            .footer-distributed .footer-center i.fa-envelope {
+                font-size: 17px;
+                line-height: 38px;
+            }
+
+        .footer-distributed .footer-center p {
+            display: inline-block;
+            color: #ffffff;
+            vertical-align: middle;
+            margin: 0;
+        }
+
+            .footer-distributed .footer-center p span {
+                display: block;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 2;
+            }
+
+            .footer-distributed .footer-center p a {
+                color: #e0ac1c;
+                text-decoration: none;
+                ;
+            }
+
+
+    /* Footer Right */
+
+    .footer-distributed .footer-right {
+        width: 30%;
+    }
+
+    .footer-distributed .footer-company-about {
+        line-height: 20px;
+        color: #92999f;
+        font-size: 13px;
+        font-weight: normal;
+        margin: 0;
+    }
+
+        .footer-distributed .footer-company-about span {
+            display: block;
+            color: #ffffff;
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+    .footer-distributed .footer-icons {
+        margin-top: 25px;
+    }
+
+        .footer-distributed .footer-icons a {
+            display: inline-block;
+            width: 35px;
+            height: 35px;
+            cursor: pointer;
+            background-color: #33383b;
+            border-radius: 2px;
+            font-size: 20px;
+            color: #ffffff;
+            text-align: center;
+            line-height: 35px;
+            margin-right: 3px;
+            margin-bottom: 5px;
+        }
+
+/* Here is the code for Responsive Footer */
+/* You can remove below code if you don't want Footer to be responsive */
+
+
+@media (max-width: 880px) {
+
+    .footer-distributed .footer-left,
+    .footer-distributed .footer-center,
+    .footer-distributed .footer-right {
+        display: block;
+        width: 100%;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+        .footer-distributed .footer-center i {
+            margin-left: 0;
+        }
+}

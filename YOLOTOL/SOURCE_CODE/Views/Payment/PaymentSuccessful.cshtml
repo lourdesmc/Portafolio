@@ -1,0 +1,98 @@
+﻿
+<div style="margin-bottom:150px">
+
+</div>
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-7">
+            <div class="card m-md-4 box-shadow" style="margin:0px !important">
+                <h2 style="color:#336633; text-align:center">¡GRACIAS POR SU COMPRA!</h2>
+                <h5 style="color:#336633; text-align:center">Pago realizado con éxito :)</h5>
+
+                <img class="card-img-top" src="~/img/Home/Portada FB.png"
+                     style="display:block" />
+                <div class="card-body">
+                    <h3 class="text-md-center">TICKET DE COMPRA EN EDEN.COM</h3>
+                    <table class="table table-borderless">
+                        <thead>
+                            <tr style="background: #b23434;">
+                                <th class="text-white" style="width:40%; color:#fff;">Producto</th>
+                                <th class="text-white" style="width:15%; color:#fff;">Cantidad</th>
+                                <th class="text-white" style="width:10%; color:#fff;">Subtotal</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                            @{ int ID = 0;
+                                string[] imagen = new string[1000];
+                                decimal[] precio = new decimal[1000];
+                                int[] cantidad = new int[1000];
+
+                                List<CartItem> cart = ViewBag.cart;
+                                for (int i = 0; i < cart.Count; i++)
+                                {
+                                    imagen[i] = cart.ElementAt(i).Producto.Imagen;
+                                    cantidad[i] = cart[i].Quantity;
+                                    precio[i] = cart[i].Producto.Precio;
+                                }
+                                foreach (var item in ViewBag.articulos)
+                                {
+                                    <tr>
+                                        <td style="color:#476011" data-th="Producto">
+                                            <div class="row" style="align-items:center">
+                                                <div class="col-md-4">
+                                                    <img style="width:100%" src="~/Productos/@imagen[ID]" />
+                                                </div>
+                                                <div class="col-md-8" style="align-items:center">
+                                                    <p>@item.name</p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td style="color:#476011; text-align:center; " data-th="Cantidad"><p>@item.quantity</p></td>
+
+                                        <td style="color:#476011" data-th="Precio por producto">
+                                            <p>$@item.price @item.currency</p>
+                                        </td>
+                                    </tr>
+                                    ID++;
+                                } }
+                        </tbody>
+                    </table>
+                    <hr class="linea" />
+                    <div class="row">
+                        <strong class="col-md-3">DIRECCIÓN DE COMPRA</strong>
+                        <p class="card-text col-md-3">Estado:  @ViewBag.direccion.state</p>
+                        <p class="card-text col-md-3">Ciudad:  @ViewBag.direccion.city</p>
+                        <p class="card-text col-md-3">Código Postal:  @ViewBag.direccion.postal_code</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-5 justify-content-center">
+            <div class="card mb-4 box-shadow" style="position: sticky!important; top:0">
+                <div class="card-body">
+                    <p style="text-align:center; color:#b23434; font-size: 20px;"><strong>"DETALLES DEL COMPRADOR "</strong></p>
+                    <hr class="linea" />
+                    <p class="card-text">Nombre/s: @ViewBag.cliente.first_name @ViewBag.cliente.middle_name</p>
+                    <p class="card-text">Apellido/s: @ViewBag.cliente.last_name</p>
+                    <p class="card-text" style="color:#0026ff">@ViewBag.cliente.email</p>
+                    <br />
+                    <p style="text-align:center; color:#b23434; font-size: 20px;"><strong>"GASTOS"</strong></p>
+                    <hr class="linea" />
+                    <p>Tasa de impuestos: <strong>  @ViewBag.detalles.tax </strong></p>
+                    <p>Tarifa: <strong> @ViewBag.detalles.fee</strong> </p>
+                    <p>Envío <strong> @ViewBag.detalles.shipping</strong> </p>
+                    <p>Subtotal: <strong> @ViewBag.detalles.subtotal </strong> </p>
+                    <strong>Importe Total: @ViewBag.importe.total</strong>
+                    <br />
+                    <div class="justify-content-between align-items-center">
+                        <div class="text-center">
+                            <a asp-action="Index" asp-controller="Catalogo" type="submit" class="btn btn-success" style="width:150px">Seguir comprando</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

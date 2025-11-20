@@ -1,0 +1,78 @@
+@model YOLOTOL.Models.Usuarios
+
+@{
+    Layout = "_LayoutDash";
+    ViewData["Title"] = "Delete";
+}
+
+<h1>Delete</h1>
+
+<h3>¿Desea borrar el siguiente campo?</h3>
+<div>
+    <h4>Usuarios</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.nombre)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.nombre)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.apellidoP)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.apellidoP)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.apellidoM)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.apellidoM)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.correo)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.correo)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.contrasenia)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.contrasenia)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.fechaNacimiento)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.fechaNacimiento)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.fotoPerfil)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.fotoPerfil)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.cedula)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.cedula)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.telefono)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.telefono)
+        </dd>
+        
+        
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="IdUsuario" />
+        <input type="submit" value="Delete" class="btn btn-danger" /> |
+        <a asp-action="Index">Back to List</a>
+    </form>
+</div>

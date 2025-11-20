@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Este archivo se usa en el proceso de publicación y empaquetado del proyecto web. Para personalizar el comportamiento de este proceso,
+edite el archivo MSBuild. Visite https://go.microsoft.com/fwlink/?LinkID=208121 para obtener más información. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAYov1fOOfgk62561uwQWeOwAAAAACAAAAAAAQZgAAAAEAACAAAABW3dgDNDq7Vy3sshB0u8JQ1/+/e3GiXKzn5R6+BvJ50gAAAAAOgAAAAAIAACAAAADMWpTeBqndyTOeRAFei1vEm7UbzDbvYakiXKI3L5m43IAAAACR5RhcrcS/v/elLHmwuKk8TLzZTqeDUdS+ZonSX9fJb/eoXBicsB9yqMQ/KpSq7HeWBCFzoV91kkH5JRLUCoENGk/LXU9vZSy104Y7ql5CSx+ut8grQLfFbns9bR/OWeb47yf6KCgjd/lFqiK+YT8Z1ZmYlPXRke3e1RmJDsx3+EAAAACvDWMdSQvQAOqx3hd7WfmOEJHbNWZi7XeAA0zsixYi+nlFcH8m32OiU0TvgnnVgde3d+kdhmlxqv+uDXIMIGnB</EncryptedPassword>
+    <History>True|2022-08-11T16:26:11.1922127Z;True|2022-08-11T11:12:50.9155114-05:00;True|2022-08-11T10:54:24.8631744-05:00;True|2022-08-11T10:35:03.1693945-05:00;True|2022-08-11T03:37:21.1389832-05:00;</History>
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="YolotolContext">
+      <Value>Server=tcp:yolotoldb.database.windows.net,1433%3bInitial Catalog=YOLOTOL%3bPersist Security Info=False%3bUser ID=yolotolb5%3bPassword=YOLOTOL2021-2022%3bMultipleActiveResultSets=False%3bEncrypt=True%3bTrustServerCertificate=False%3bConnection Timeout=30%3b</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+</Project>

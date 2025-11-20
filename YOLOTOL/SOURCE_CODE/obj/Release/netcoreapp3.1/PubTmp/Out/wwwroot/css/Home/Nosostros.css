@@ -1,0 +1,21 @@
+﻿@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+* {
+    font-family: "Oregon LDO";
+}
+
+#line {
+    width: 25%;
+    margin: auto;
+    color: #0070c0;
+    max-width: 100%;
+    min-width: 50%;
+}
+
+#linea1 {
+    width: 17%;
+    margin: auto;
+    color: #0070c0;
+    max-width: 100%;
+    min-width: 35%;
+}

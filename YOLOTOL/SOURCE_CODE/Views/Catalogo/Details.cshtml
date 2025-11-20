@@ -1,0 +1,26 @@
+﻿@model YOLOTOL.Models.Productos
+@{
+
+    ViewData["Title"] = "Detalles";
+}
+
+<section class="py-5" style="font-family:'Oregon LDO'">
+    <div class="container px-4 px-lg-5 my-5">
+        <div class="row gx-4 gx-lg-5 align-items-center">
+            <div class="col-md-6"><img class="card-img-top mb-5 mb-md-0" src="~/Producto/@Html.DisplayFor(model => model.Imagen)" alt="..." /></div>
+            <div class="col-md-6">
+                <h1 class="display-5 fw-bolder">@Html.DisplayFor(model => model.Nombre)</h1>
+                <div class="fs-5 mb-5">
+
+                    <span>$@Html.DisplayFor(model => model.Precio)</span>
+                </div>
+                <p class="lead">@Html.DisplayFor(model => model.Descripcion)</p>
+                <div >
+                    <a  style="  margin-left:10%;"asp-action="Index" asp-controller="Catalogo" class="btn-d text-white">Regresar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+

@@ -1,0 +1,74 @@
+@model IEnumerable<YOLOTOL.Models.Productos>
+
+@{
+    Layout = "_LayoutDash";
+    ViewData["Title"] = "Index";
+}
+
+<h1>Productos</h1>
+
+<p style="text-decoration:none; font-size:24px; font-family:'Oregon LDO';">
+    <a asp-action="Create">Crear nuevo</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Nombre)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Imagen)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Precio)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Stock)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Descripcion)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IdCategoria)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nombre)
+            </td>
+            <td>
+                <img src="~/Producto/@item.Imagen" height="40" width="40" asp-append-version="true" />
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Precio)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Stock)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Descripcion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdCategoria)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.IdProducto"><i style="color:black;" class="fa fa-pen"></i></a>
+            </td>
+            <td>
+                <a asp-action="Details" asp-route-id="@item.IdProducto"><i style="color:black;" class="fa fa-list"></i></a>
+
+            </td>
+            <td>
+                <a asp-action="Delete" asp-route-id="@item.IdProducto"><i style="color:black;" class="fa fa-window-close"></i></a>
+            </td>
+
+           
+
+        </tr>
+}
+    </tbody>
+</table>
