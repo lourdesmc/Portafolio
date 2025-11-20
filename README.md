@@ -86,5 +86,7 @@ Includes **3D visualization** using **Three.js**, a **C# backend**, and database
 ---
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=lourdesmc&show_icons=true&locale=en&layout=compact&theme=graywhite" alt="Top Languages" />
+  ![lourdesmc's Stats](https://github-readme-stats.vercel.app/api?username=lourdesmc&theme=vue-dark&show_icons=true&hide_border=true&count_private=true)
+  ![lourdesmc's Streak](https://github-readme-streak-stats.herokuapp.com/?user=lourdesmc&theme=vue-dark&hide_border=true)
+  ![lourdesmc's Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=lourdesmc&theme=vue-dark&show_icons=true&hide_border=true&layout=compact)
 </p>
