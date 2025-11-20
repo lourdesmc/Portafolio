@@ -4,7 +4,7 @@
 <p align="center">
   I’m a web developer and researcher passionate about <b>Natural Language Processing (NLP)</b>, 
   <b>3D environments</b>, and <b>educational video game development</b>.  
-  I enjoy creating digital solutions that combine innovation, technology and real social impact.
+  I enjoy creating digital solutions that combine innovation, technology, and real social impact.
 </p>
 
 ---
@@ -24,31 +24,34 @@
 #### 🎮 **[ExpresaTEA](https://github.com/lourdesmc/expresatea)**
 Educational video game designed to improve language acquisition in children with Autism Spectrum Disorder (ASD) using **Natural Language Processing (NLP)** techniques.
 
-Developed with **Unity**, **C#**, and **Python**, the game integrates speech analysis, repetition exercises, and real-time feedback using NLP and signal processing tools.
+Developed with **Unity**, **C#**, and **Python**, integrating speech analysis, repetition exercises, and real-time feedback.
 
 📷 **Screenshots & Gameplay Videos:**  
 https://github.com/lourdesmc/lourdesmc/tree/main/ExpresaTEA_Media  
 
+📊 **Interactive Dashboard (React – GitHub Pages):**  
+https://lourdesmc.github.io/expresatea-dashboard  
+
 ---
 
 #### 💻 **[YOLOTOL](https://github.com/lourdesmc/yolotol)**
-Progressive Web Application (PWA) with e-commerce integration, user authentication, and role-based access.  
-Developed using **Angular**, **ASP.NET**, and **MySQL**.
+Progressive Web Application (PWA) featuring e-commerce integration, user authentication, and role-based access control.  
+Developed with **Angular**, **ASP.NET**, and **MySQL**.
 
 ---
 
 #### 📚 **[Book Register Form (React)](https://github.com/lourdesmc/formulario-libros-react)**
-Simple React application to practice state management with `useState`.  
-Allows users to register books and display them dynamically in a table.  
+A React application for practicing state management with `useState`.  
+Allows users to register books and display them dynamically in a table.
+
 🌐 **Live Demo:**  
 https://lourdesmc.github.io/formulario-libros-react/
 
 ---
 
 #### ⚙️ **[CCA 3D Dashboard](https://github.com/lourdesmc/cca-consultores)**
-Professional internship project:  
-Real-time monitoring dashboard with **3D visualization** of industrial equipment using **Three.js** and a **C# backend**, including database synchronization and 3D modeling.
-https://lourdesmc.github.io/expresatea-dashboard
+Professional internship project focused on real-time monitoring of industrial machinery.  
+Includes **3D visualization** using **Three.js**, a **C# backend**, and database synchronization.
 
 ---
 
