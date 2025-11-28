@@ -2,67 +2,119 @@
 <h3 align="center">🎓 Web Developer & Game Developer | Master's in Computer Systems | Mexico 🇲🇽</h3>
 
 <p align="center">
-  I’m a web developer and researcher passionate about <b>Natural Language Processing (NLP)</b>, 
-  <b>3D environments</b>, and <b>educational video game development</b>.  
-  I enjoy creating digital solutions that combine innovation, technology, and real social impact.
+  I am a developer with experience in web systems, virtual environments, and educational video game development.  
+  I enjoy exploring new tools, learning continuously, and creating technological solutions that deliver real value and support purposeful innovation.
 </p>
 
 ---
 
-### 🚀 About Me
-- 🔭 Currently developing **ExpresaTEA**, an educational video game for children with ASD using **NLP techniques**.  
-- 💻 Other projects: **YOLOTOL (PWA)** and **CCA 3D Control Dashboard**.  
-- 🌱 Improving my skills in **React**, **Angular**, **Spring Boot**, and **data analysis techniques**.  
-- 🎯 Interests: web development, educational technology, artificial intelligence, and game design.  
-- 📄 Check my CV → [CV_Maria_Malagon.pdf](https://github.com/lourdesmc/lourdesmc/blob/main/CV_Maria_Malagon.pdf)  
-- 📫 Contact me: **lulu.malagon21@gmail.com**  
+## 🚀 About Me
+- 🎮 Latest work: **ExpresaTEA**, an educational video game that applies **NLP** techniques to improve language acquisition in children with ASD.  
+- ⏸️ **YOLOTOL** is currently paused, but I plan to continue its development as a long-term project.  
+- 🌱 Currently improving my skills in **React**, **Angular**, **Spring Boot**, and data-driven development.  
+- 🎯 Areas of interest: web development, educational technology, artificial intelligence, virtual environments, and game design.  
+- 📄 Check my CV → **[CV_Maria_Malagon.pdf](https://github.com/lourdesmc/lourdesmc/blob/main/CV_Maria_Malagon.pdf)**  
+- 📫 Contact me: **lulu.malagon21@gmail.com**
 
 ---
 
-### 🧩 Featured Projects
+## 🧩 Featured Projects
 
-#### 🎮 **[ExpresaTEA](https://github.com/lourdesmc/expresatea)**
-Educational video game designed to improve language acquisition in children with Autism Spectrum Disorder (ASD) using **Natural Language Processing (NLP)** techniques.
+### 🎮 **[ExpresaTEA](https://github.com/lourdesmc/expresatea)**
+Video game focused on improving linguistic skills in children with Autism Spectrum Disorder (ASD) through **Natural Language Processing** and interactive learning.
 
-Developed with **Unity**, **C#**, and **Python**, integrating speech analysis, repetition exercises, and real-time feedback.
+Developed using **Unity**, **C#**, and **Python**, integrating speech analysis, repetition exercises, and real-time feedback.
 
-📷 **Screenshots & Gameplay Videos:**  
-https://github.com/lourdesmc/lourdesmc/tree/main/ExpresaTEA_Media  
+📷 **Screenshots & Gameplay Videos**  
+➡️ https://github.com/lourdesmc/lourdesmc/tree/main/ExpresaTEA_Media
 
-📊 **Interactive Dashboard (React – GitHub Pages):**  
-https://lourdesmc.github.io/expresatea-dashboard  
-
----
-
-#### 💻 **[YOLOTOL](https://github.com/lourdesmc/yolotol)**
-Progressive Web Application (PWA) featuring e-commerce integration, user authentication, and role-based access control.  
-Developed with **Angular**, **ASP.NET**, and **MySQL**.
+📊 **Interactive Dashboard (React – GitHub Pages)**  
+➡️ https://lourdesmc.github.io/expresatea-dashboard
 
 ---
 
-#### 📚 **[Book Register Form (React)](https://github.com/lourdesmc/formulario-libros-react)**
-A React application for practicing state management with `useState`.  
-Allows users to register books and display them dynamically in a table.
-
-🌐 **Live Demo:**  
-https://lourdesmc.github.io/formulario-libros-react/
+### 💻 **[YOLOTOL](https://github.com/lourdesmc/yolotol)**
+Progressive Web Application (PWA) with authentication, shopping module, and role-based access.  
+Built with **Angular**, **ASP.NET**, and **MySQL**.
 
 ---
 
-#### ⚙️ **[CCA 3D Dashboard](https://github.com/lourdesmc/cca-consultores)**
-Professional internship project focused on real-time monitoring of industrial machinery.  
-Includes **3D visualization** using **Three.js**, a **C# backend**, and database synchronization.
+### 📚 **[Book Register Form (React)](https://github.com/lourdesmc/formulario-libros-react)**
+A simple practice application using `useState` to store and display book information dynamically.
+
+🌐 **Live Demo**  
+➡️ https://lourdesmc.github.io/formulario-libros-react/
 
 ---
 
-### 🛠 Languages and Tools
+### ⚙️ **[CCA 3D Dashboard](https://github.com/lourdesmc/cca-consultores)**
+Dashboard for industrial machinery monitoring with **3D visualization** using **Three.js** and a **C# backend**, including real-time synchronization.
+
+---
+
+### 🧠 Technical Skills
+
+### 🎨 Frontend & Web 3D
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=html,css,bootstrap,js,ts,react,angular,cs,dotnet,java,python,unity,mysql,postgresql,spring,git,github,figma,ps,rider,threejs,vscode,visualstudio,unity" />
+  <img height="48" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
+  <img height="48" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />
+  <img height="48" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
+  <img height="48" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" />
+  <img height="48" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" />
+  <img height="48" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ionic/ionic-original.svg" />
+  <img height="48" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/threejs/threejs-original.svg" /> <!-- Three.js regresado -->
 </p>
+
+### ⚙️ Backend & APIs
+<p align="center">
+  <img height="48" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" />
+  <img height="48" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg" />
+  <img height="48" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" />
+  <img height="48" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" />
+  <img height="48" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" />
+</p>
+
+### 🎮 Game Development & 3D Tools
+<p align="center">
+  <img height="48" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unity/unity-original.svg" />
+  <img height="48" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/maya/maya-original.svg" />
+          
+</p>
+
+### 🛢️ Databases & DB Tools
+<p align="center">
+  <img height="48" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" />
+  <img height="48" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" />
+  <img height="48" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" />
+  <img height="40" src="https://img.shields.io/badge/MySQL_Workbench-00758F?style=flat" />
+  <img height="40" src="https://img.shields.io/badge/pgAdmin-316192?style=flat" />
+</p>
+
+### 📊 Data Science, ETL & NLP
+<p align="center">
+  <img height="40" src="https://img.shields.io/badge/Weka-4D8FAC?style=flat" />
+  <img height="40" src="https://img.shields.io/badge/ETL-6C757D?style=flat" />
+  <img height="40" src="https://img.shields.io/badge/Power%20BI-F2C811?style=flat&logo=powerbi&logoColor=black" />
+  <img height="40" src="https://img.shields.io/badge/Wit.ai-563D7C?style=flat" />
+</p>
+
+### 🛠 Tools, IDEs & Design
+<p align="center">
+  <img height="48" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" />
+  <img height="48" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/visualstudio/visualstudio-plain.svg" />
+  <img height="48" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/intellij/intellij-original.svg" />
+  <img height="40" src="https://img.shields.io/badge/Rider-000000?style=flat&logo=rider&logoColor=white" />
+  <img height="48" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" />
+  <img height="48" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" />
+  <img height="48" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" />
+  <img height="48" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-plain.svg" />
+  <img height="40" src="https://img.shields.io/badge/Audacity-0000FF?style=flat&logo=audacity&logoColor=white" />
+</p>
+
 
 ---
 
-### 🏆 Certifications
+## 🏆 Certifications
 - CCNA R&S: Introduction to Networks  
 - CCNA R&S: Routing and Switching Essentials  
 - NDG Linux Essentials  
@@ -70,24 +122,20 @@ Includes **3D visualization** using **Three.js**, a **C# backend**, and database
 
 ---
 
-### 🌐 Connect with Me
+## 🌐 Connect With Me
 <p align="center">
   <a href="https://www.linkedin.com/in/maría-de-lourdes-malagón-casales-27772538a" target="_blank">
-    <img src="https://img.shields.io/badge/LinkedIn-Lourdes%20Malagón-blue?style=for-the-badge&logo=linkedin" alt="LinkedIn" />
+    <img src="https://img.shields.io/badge/LinkedIn-Lourdes%20Malagón-blue?style=for-the-badge&logo=linkedin" />
   </a>
   <a href="mailto:lulu.malagon21@gmail.com">
-    <img src="https://img.shields.io/badge/Email-lulu.malagon21%40gmail.com-red?style=for-the-badge&logo=gmail" alt="Email" />
-  </a>
-  <a href="https://github.com/lourdesmc">
-    <img src="https://img.shields.io/badge/GitHub-lourdesmc-black?style=for-the-badge&logo=github" alt="GitHub" />
+    <img src="https://img.shields.io/badge/Email-lulu.malagon21%40gmail.com-red?style=for-the-badge&logo=gmail" />
   </a>
 </p>
 
 ---
-### 📊 GitHub Stats
 
+## 📊 GitHub Stats
 
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=lourdesmc&theme=vue-dark&show_icons=true&hide_border=true&layout=compact" />
 </p>
-
