@@ -74,6 +74,12 @@ Dashboard for industrial machinery monitoring with **3D visualization** using **
   <img height="48" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" />
 </p>
 
+### 🗄 ORM & Data Access
+<p align="center">
+  <img height="48" title="Entity Framework Core" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg" />
+  <img height="48" title="Hibernate / JPA" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" />
+</p>
+
 ### 🎮 Game Development & 3D Tools
 <p align="center">
   <img height="48" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unity/unity-original.svg" />
